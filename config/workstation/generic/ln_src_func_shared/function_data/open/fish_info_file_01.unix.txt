@@ -1,0 +1,48 @@
+#···············································································
+to use fish as root:                'su -c fish'
+to call fish functions from cron:   'fish -c function_name'
+to time function execution:         'timed ["]function_name [args]["]'
+commands preceded by a space will not be added to the fish history
+note that the terminator custom .desktop launcher is invoking ssh-agent for now
+#···············································································
+relevant fish GitHub issues include:
+    https://github.com/fish-shell/fish-shell/issues/110 (redirection)
+    https://github.com/fish-shell/fish-shell/issues/347 (continuation backslash)
+    https://github.com/fish-shell/fish-shell/issues/1279 (timing builtin)
+#···············································································
+other bugs affecting terminals include:
+    Gnome bug 641082
+#···············································································
+some default fish functions that are useful include:
+    help  (this launches a web browser however)
+    functions, functions -a, functions --help
+#···············································································
+some useful CLI commands include (but are not limited to):
+    exiftool
+    journalctl -f
+    lame
+    lsof
+    namei -l
+    netstat
+    ps
+#···············································································
+some useful CUSTOM fish functions include (but are not limited to):
+    backup_laptop
+    curl_wan_ip
+    source_fish
+    ssh_rem_urs
+    system_info
+    timed
+    updt_mybhsk
+    upgrade_packages
+#···············································································
+dependencies for my custom functions
+    (these may or may not be installed by default on the target system):
+#···············································································
+    ddate
+    ffmpeg
+    imagemagick
+    inxi (and thus, mesa-demos, dmidecode, hddtemp, lm_sensors)
+    lsbrelease
+    lshw
+    mp3splt ?

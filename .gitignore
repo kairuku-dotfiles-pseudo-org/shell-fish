@@ -1,0 +1,13 @@
+#···············································································
+#   WORKSTATION QUASI-SUB-REPO:
+#···············································································
+
+/config/workstation/generic/linked_dir_user_normal/fishd.*
+/config/workstation/generic/linked_dir_user_super/fishd.*
+
+/config/workstation/generic/ln_src_conf_shared/closed
+
+/config/workstation/generic/ln_src_func_shared/functions/closed
+/config/workstation/generic/ln_src_func_shared/function_data/closed
+
+/config/workstation/generic/ln_src_hist

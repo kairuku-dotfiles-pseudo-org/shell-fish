@@ -1,0 +1,1 @@
+/z/750/dot/repos/tty-gnome-terminator/aux/workstation/fish_functions/rebuild_terminator.fish

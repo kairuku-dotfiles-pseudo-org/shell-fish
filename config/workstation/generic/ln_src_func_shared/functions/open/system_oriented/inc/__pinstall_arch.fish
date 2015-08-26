@@ -1,0 +1,1 @@
+/z/750/dot/repos/os-arch/aux/workstation/fish_functions/__pinstall_arch.fish
