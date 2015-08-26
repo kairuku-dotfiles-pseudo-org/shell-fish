@@ -16,6 +16,7 @@ function gh_batch_api_init_org_repos -d "loop through a local org dir and create
 
             for REPO_DIR in *
 
+                # do not use underscores in directory names, they're not allowed on github
                 set -l GH_REPO  $REPO_DIR
                 cd $REPO_DIR
 
@@ -31,7 +32,7 @@ function gh_batch_api_init_org_repos -d "loop through a local org dir and create
 
 #···············································································
         else
-            __cli_message "No arguments given, halting fucntion exection"
+            __cli_message "No arguments given, halting function exection"
         end # END ARGUMENTS CHECK
 
     else
