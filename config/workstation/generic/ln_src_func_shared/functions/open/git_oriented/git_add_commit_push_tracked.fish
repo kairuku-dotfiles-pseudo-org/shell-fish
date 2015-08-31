@@ -33,6 +33,9 @@ function git_add_commit_push_tracked -d "git add, commit and push if an agent is
         __cli_div_80
         gits
 
+        __cli_message "If the remote doesn't recognize deletions or new ignores, call 'git_rm_cache'"
+        __cli_message "If the last commit was a mistake, call 'git_undo_last_commit'"
+
     else
         __cli_message "The ssh agent has no identities, thus not executing any git commands"
     end # END SSH-AGENT TEST
