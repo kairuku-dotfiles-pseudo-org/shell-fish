@@ -3,6 +3,7 @@
 # depends on "lnif" function (which depends on explicit $HOME paths); 
 # see separate bash repo
 source $BASH_CUSTOM_FUNCTIONS_FILE
+divyel
 
 CURRENT_DIR=$(pwd)
 

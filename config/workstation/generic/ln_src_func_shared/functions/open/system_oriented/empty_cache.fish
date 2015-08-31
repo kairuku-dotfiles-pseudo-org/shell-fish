@@ -4,14 +4,14 @@ function empty_cache -d "empty buffers/cache/swap"
             __cli_message "you are root, emptying the cache and swap"
 
             free -h
-            swapoff -a
+            swapoff -va
 
             sync
             sysctl vm.drop_caches=3
             #   echo 3 > /proc/sys/vm/drop_caches
             sleep 2
 
-            swapon -a
+            swapon -va
             free -h
         case '*'
             __cli_message "you must be root to run this command"

@@ -2,8 +2,12 @@
 #   WORKSTATION QUASI-SUB-REPO:
 #···············································································
 
-/config/workstation/generic/linked_dir_user_normal/fishd.*
-/config/workstation/generic/linked_dir_user_super/fishd.*
+/config/workstation/generic/linked_dir_user_normal
+/config/workstation/generic/linked_dir_user_super
+
+
+#/config/workstation/generic/linked_dir_user_normal/fishd.*
+#/config/workstation/generic/linked_dir_user_super/fishd.*
 
 /config/workstation/generic/ln_src_conf_shared/closed
 
@@ -11,3 +15,20 @@
 /config/workstation/generic/ln_src_func_shared/function_data/closed
 
 /config/workstation/generic/ln_src_hist
+
+#···············································································
+# symlinks
+# if not tracking with git, need a mechanism to check for when a link is replaced by a file
+# maybe in the greeting
+#···············································································
+
+#./config/workstation/generic/linked_dir_user_super/functions
+#./config/workstation/generic/linked_dir_user_super/config.fish
+#./config/workstation/generic/linked_dir_user_super/fish_history
+#./config/workstation/generic/linked_dir_user_normal/functions
+#./config/workstation/generic/linked_dir_user_normal/config.fish
+
+./config/workstation/generic/ln_src_func_shared/functions/open/misc/validate_launchers.fish
+./config/workstation/generic/ln_src_func_shared/functions/open/misc/rebuild_terminator.fish
+./config/workstation/generic/ln_src_func_shared/functions/open/system_oriented/inc/__pinstall_arch.fish
+./config/workstation/generic/ln_src_func_shared/functions/open/system_oriented/inc/__pupgrade_arch.fish
