@@ -54,6 +54,7 @@ function camera_processing -d "sorts & resizes assets from digital camera"
             __cli_div_80
             la
         else if [ $HOST_OS = "ubuntu_linux" ]
+            # note: Ubuntu ships the perl version of rename
             rename -v 's/\.JPG$/\.rsz.jpg/' *.JPG
             __cli_div_80
             la

@@ -17,9 +17,8 @@ function pupgrade -d "OS abstraction layer for upgrading packages"
                     __cli_message "We're not on Arch or Ubuntu, aborting!"
             end # END OF OS TESTING SWITCH
 
-        __cli_message "Uptime & free:"
-        uptime
-        free -h
+        # call custom function and wrap up
+        stats_basic
 
     end # END ROOT TESTING SWITCH
 
